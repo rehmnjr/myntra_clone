@@ -6,7 +6,7 @@
 }
 
 body{
-    background: #c2c2c2;
+    background: #ffffff;
     overflow-x: hidden;
 }
 .nav-body{
@@ -17,6 +17,8 @@ body{
     justify-content: center;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    position: fixed;
+    top: 0;
 }
 .nav-list{
     display: flex;
@@ -47,10 +49,11 @@ width: 35%;
 min-width: 400px;
 }
 .nav-searchBar{
-    min-width: 100px;
+    min-width: 250px;
 }
 .nav-personal{
     width: 15%;
+    min-width: 200px;
 }
 
 
@@ -93,16 +96,25 @@ min-width: 400px;
     background: #e8e8e8;
 }
 
+main{
+    margin-top: 100px;
+}
+
 .main-bg{
     width: 100vw;
 }
 .img-section{
     width: 100vw;
 }
-.img1,.img2,.img3,.img4,.img5{
+.img1,.img2,.img3,.img4,.img5,.img6,.img7{
     width: 100%;
 }
-
+.img1{
+    margin-top: 25px;
+}
+.img1 img{
+    width: 100%;
+}
 .img2,.img4{
     display: flex;
 }
@@ -110,7 +122,7 @@ min-width: 400px;
     width: 50%;
 }
 .img4 img{
-    width: 50%;
+    width: 49.5%;
 }
 .img3 img{
 width: 100%;
@@ -118,3 +130,33 @@ width: 100%;
 .img5 img{
     width: 100%;
     }
+.img5 img{
+    width: 100%;
+    }
+
+.img6 img{
+    width: 100%;
+    }
+
+.img7 img{
+    width: 100%;
+    }
+    
+
+.slider1{
+display: flex;
+overflow-x: auto;
+}
+
+.slider1 img{
+width:16.6%;
+}
+
+.category{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.category img{
+    width: 16.666%;
+}
