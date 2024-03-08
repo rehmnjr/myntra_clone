@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background: #c2c2c2;
+    overflow-x: hidden;
+}
+.nav-body{
+    background: rgb(255, 255, 255);
+    display: flex;
+    height: 80px;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.nav-list{
+    display: flex;
+    width: 90vw;
+   justify-content: space-between;
+}
+
+
+
+.nav-logo, .nav-link, .nav-searchBar,.nav-personal{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-link, .nav-searchBar{
+    width: 40%;
+    font-weight: 640;
+    font-size: 0.88rem;
+   
+}
+.nav-link a{
+    text-decoration: none;
+    color: black;
+}
+.nav-link{
+width: 35%;
+min-width: 400px;
+}
+.nav-searchBar{
+    min-width: 100px;
+}
+.nav-personal{
+    width: 15%;
+}
+
+
+
+.nav-logo img{
+    width: 60px;
+}
+
+.nav-personal{
+    display: flex;
+  
+}
+.personal{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.personal span{
+    font-size: 0.8rem;
+}
+.personal i{
+    font-size: 1.2rem;
+}
+
+.nav-searchBar input{
+    width: 90%;
+    height: 40px;
+    border: none;
+    background: #e8e8e8;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+}
+.nav-searchBar button{
+    width: 10%;
+    height: 40px;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: #e8e8e8;
+}
+
+.main-bg{
+    width: 100vw;
+}
+.img-section{
+    width: 100vw;
+}
+.img1,.img2,.img3,.img4,.img5{
+    width: 100%;
+}
+
+.img2,.img4{
+    display: flex;
+}
+.img2 img{
+    width: 50%;
+}
+.img4 img{
+    width: 50%;
+}
+.img3 img{
+width: 100%;
+}
+.img5 img{
+    width: 100%;
+    }
