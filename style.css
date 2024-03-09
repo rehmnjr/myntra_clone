@@ -22,7 +22,7 @@ body{
 }
 .nav-list{
     display: flex;
-    width: 90vw;
+    width: 95vw;
    justify-content: space-between;
 }
 
@@ -35,9 +35,9 @@ body{
 }
 
 .nav-link, .nav-searchBar{
-    width: 40%;
+    width: 35%;
     font-weight: 640;
-    font-size: 0.88rem;
+    font-size: 0.85rem;
    
 }
 .nav-link a{
@@ -45,7 +45,9 @@ body{
     color: black;
 }
 .nav-link{
-width: 35%;
+display: flex;
+justify-content: space-evenly;
+width: 40%;
 min-width: 400px;
 }
 .nav-searchBar{
@@ -82,7 +84,7 @@ min-width: 400px;
     width: 90%;
     height: 40px;
     border: none;
-    background: #e8e8e8;
+    background: #f5f5f5;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     outline: none;
@@ -93,7 +95,10 @@ min-width: 400px;
     border: none;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    background: #e8e8e8;
+    background: #f5f5f5;
+}
+.nav-searchBar ::placeholder{
+   
 }
 
 main{
@@ -159,4 +164,42 @@ width:16.6%;
 }
 .category img{
     width: 16.666%;
+}
+
+.box{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    min-width: 50px;
+    justify-content: center;
+}
+
+.box1,.box2,.box3,.box4,.box5,.box6{
+   /* background-color: aqua; */
+   border-bottom:  3px solid white;
+}
+
+.box1:hover{
+    border-bottom: 3px solid #EE5F73;
+}
+
+.box2:hover{
+    border-bottom: 3px solid #FB56C1 ; 
+}
+
+.box3:hover{
+    border-bottom: 3px solid #F26A10 ;
+    
+}
+
+.box4:hover{
+    border-bottom: 3px solid #F2C210 ;
+}
+
+.box5:hover{
+    border-bottom: 3px solid #0DB7AF ;
+}
+
+.box6:hover{
+    border-bottom: 3px solid #FF3F6C ;
 }
