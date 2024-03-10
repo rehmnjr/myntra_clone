@@ -19,6 +19,7 @@ body{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     position: fixed;
     top: 0;
+    z-index: 10;
 }
 .nav-list{
     display: flex;
@@ -98,11 +99,12 @@ min-width: 400px;
     background: #f5f5f5;
 }
 .nav-searchBar ::placeholder{
-   
+   color: rgba(77, 77, 77, 0.695);
 }
 
 main{
-    margin-top: 100px;
+    position: absolute;
+    top: 75px;
 }
 
 .main-bg{
@@ -156,7 +158,14 @@ overflow-x: auto;
 .slider1 img{
 width:16.6%;
 }
-
+.slider1-radio-button{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+#left, #right{
+    width: 12px;
+}
 .category{
     display: flex;
     flex-wrap: wrap;
@@ -172,6 +181,12 @@ width:16.6%;
     align-items: center;
     min-width: 50px;
     justify-content: center;
+}
+
+.new{
+    font-weight: bold;
+    color: #ff0062;
+    font-size: 0.5rem;
 }
 
 .box1,.box2,.box3,.box4,.box5,.box6{
@@ -203,3 +218,150 @@ width:16.6%;
 .box6:hover{
     border-bottom: 3px solid #FF3F6C ;
 }
+.men-list,.women-list,.kid-list,.home-list,.beauty-list{
+ background: #ffffff;
+ display: flex;
+ width: 1110px;
+ height: 440px;
+ justify-content: space-around;
+ font-size: 0.9rem;
+ gap: 10px;
+ position: fixed;
+ top:80px;
+ left: 150px;
+ z-index: 9;
+}
+.men-list ul{
+    list-style-type: none;
+}
+.women-list ul{
+    list-style-type: none;  
+}
+.kid-list ul{
+    list-style-type: none;
+}
+.home-list ul{
+    list-style-type: none;
+}
+.beauty-list ul{
+    list-style-type: none;
+}
+.list-div2, .list-div4{
+    background: #f5f5f5;
+}
+
+.list-div, .list-div2,.list-div3, .list-div4,.list-div5{
+    width:25%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.category-list{
+ display: flex;
+ flex-direction: column;
+ gap: 5px;
+}
+.category-list a{
+    text-decoration: none;
+    color: black;
+}
+.category-list a :hover{
+   font-weight: bold;
+
+}
+.category-list h4{
+    color:#EE5F73 ;
+    margin-top: 10px;
+}
+
+.hide{
+    display: none;
+}
+
+.fade-box{
+    width: 100vw ;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.61);
+    position: fixed;
+    z-index: 8;
+}
+.women-color h4{
+    color: #FB56C1 ;
+    margin-top: 10px;
+}
+.hide2{
+    display: none;
+}
+.kid-color h4{
+    color: #F26A10 ;
+    margin-top: 10px;
+}
+.hide3{
+    display: none;
+}
+
+.home-list h4{
+    color: #F2C210;
+    margin-top: 10px;
+}
+.hide4{
+    display: none;
+}
+
+.beauty-list h4{
+    color:#0DB7AF ;
+    margin-top: 10px;
+}
+.hide5{
+    display: none;
+}
+
+.studio-div{
+    width: 545px;
+    height: 454px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+    top: 80px;
+    left: 350px;
+    z-index: 9;
+}
+.studio-cont1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.studio-div img{
+    width: 80%;
+}
+.chevron-right{
+    font-size: 0.5rem;
+    color: black;
+}
+.studio-btn{
+    width: 220px;
+    height: 60px;
+    background: transparent;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    gap: 10%;
+}
+.cont2{
+    margin-bottom: 50px;
+    display: flex;
+    gap: 25px;
+}
+.hide6{
+    display: none;
+}
+
