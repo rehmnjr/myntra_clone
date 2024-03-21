@@ -283,7 +283,7 @@ return `<nav>
 
                 </div>
                 <div class="box box2">
-                    <a href=""><span>WOMEN</span></a>
+                    <a href="./women.html"><span>WOMEN</span></a>
 
                     <section class="women-category-hide hide2">
         <div class="nav-category women-list">
@@ -1414,7 +1414,7 @@ return `<nav>
 
             <div class="studio-cont1 cont2">
                 <img src="https://constant.myntassets.com/web/assets/img/sudio-nav-banner.png" alt="">
-                <button class="studio-btn">Explore Studio <i class="fa-solid fa-chevron-right"></i></button>
+                <button type="submit" class="studio-btn">Explore Studio <i class="fa-solid fa-chevron-right"></i></button>
             </div>
         </div>
     </section>
@@ -1434,10 +1434,37 @@ return `<nav>
                 <div class="Nav-profile personal">
                     <i class="fa-regular fa-user"></i>
                     <!-- <i class="fa-solid fa-user"></i> -->
-                    <span>Profile</span>
+                    <span>Profile</span> 
+
+                    <section class="profile-category hide7">
+                    <div class="profile-content">
+                        <span class="welcome"><b>Welcome</b></span>
+                        <span>To access account and manage orders</span>
+                   <a href="./signup.html"> <button class="log-sign-btn"><b>LOGIN</b> / <b>SIGNUP</b></button></a>
+                
+                        <hr>
+                
+                        <ul class="profile-list">
+                            <a href=""><li>Orders</li></a>           
+                            <a href=""><li>Wishlist</li></a>
+                            <a href=""><li>Gifts Cards</li></a>
+                            <a href=""><li>Contact Us</li></a>
+                            <a href=""><li>Myntra Insider</li></a>
+                
+                          <li><hr></li>
+                
+                           <a href=""><li>Myntra Credit </li></a>
+                           <a href=""><li>Coupons </li></a>
+                           <a href=""><li>Saved Cards </li></a>
+                           <a href=""><li>Saved VPA </li></a>
+                           <a href=""><li>Saved Addresses </li></a>
+                        </ul>
+                    </div>
+                </section>
+                
                 </div>
 
-                <div class="Nav-wishlist personal">
+                <div class="Nav-wishlist personal"  onclick="redirectToWish()">
                     <i class="fa-regular fa-heart"></i>
                     <!-- <i class="fa-solid fa-heart"></i> -->
                     <span>Wishlist</span>
@@ -1451,8 +1478,9 @@ return `<nav>
             </div>
 
         </div>
-
+        
     </div>
 </nav>`
 }
+
 export default navbar;

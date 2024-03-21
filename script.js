@@ -20,6 +20,9 @@ document.addEventListener('DOMContentLoaded', function () {
     let f = document.querySelector('.studio-category');
     let studioBox = document.querySelector('.box6');
 
+    let g = document.querySelector('.profile-category');
+    let profileBox = document.querySelector('.Nav-profile');
+
     menBox.addEventListener('mouseover', function () {
         a.classList.remove('hide');
         fade.classList.remove('fade-hide');
@@ -89,5 +92,41 @@ document.addEventListener('DOMContentLoaded', function () {
         
     }); 
 
+    profileBox.addEventListener('mouseover', function () {
+        g.classList.remove('hide7');
+    });
+
+   profileBox.addEventListener('mouseout', function () {
+    g.classList.add('hide7');
+    }); 
+
 
 });
+
+function redirectToWish(){
+    window.location.href = './wishlist.html';
+}
+
+function redirectToSignup(){
+    window.location.href = './signup.html';
+}
+
+
+const shopURLs = [
+    './men.html',
+    './page2.html',
+    //we can add more URLS here: this is OBJ
+    
+  ];
+  
+
+let arr = document.querySelectorAll('.home_category_img');
+for(let i=0; i<arr.length; i++){
+arr[i].addEventListener('click', function(){
+    window.location.href = shopURLs[i];
+});
+}
+
+// function myfun(event){
+// //    event.target.style.cursor = 'pointer';
+// }

@@ -59,7 +59,11 @@ min-width: 550px;
     min-width: 200px;
 }
 
-
+.Nav-profile{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 .nav-logo img{
     width: 60px;
@@ -101,6 +105,15 @@ min-width: 550px;
 .nav-searchBar ::placeholder{
    color: rgba(77, 77, 77, 0.695);
 }
+
+/* NAV HOVER */
+
+.personal:hover{
+cursor: pointer;
+}
+
+
+/* MAIN START */
 
 main{
     position: absolute;
@@ -156,8 +169,12 @@ overflow-x: auto;
 }
 
 .slider1 img{
-width:16.6%;
+width:16.66%;
 }
+.slider1 img:hover{
+  cursor: pointer;
+ }
+
 .slider1-radio-button{
     display: flex;
     justify-content: center;
@@ -278,6 +295,9 @@ width:16.6%;
 .category-list h4{
     color:#EE5F73 ;
     margin-top: 10px;
+}
+.home_category_img:hover{
+cursor: pointer;
 }
 
 .hide{
@@ -424,3 +444,60 @@ color: rgb(94, 94, 94);
  height: 20px;
 }
 
+
+/* Profile Hover list CSS */
+.profile-category{
+   width: 280px;
+   position: absolute;
+   z-index: 9;
+   top: 80px;
+   right: 50px;
+   background: white;
+   padding: 10px 10px 50px 10px;
+   /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px inset, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px;
+}
+
+.profile-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: rgb(82, 82, 82);
+    font-size: 0.85rem;
+    
+}
+
+.profile-content a{
+    text-decoration: none;
+    color:rgb(82, 82, 82);
+}
+
+.profile-content a:hover{
+    color: black;
+    font-weight: bold;
+}
+.profile-content ul{
+    list-style: none;
+}
+.log-sign-btn{
+    width:140px;
+    height: 40px;
+    background: none;
+    border: 1px solid black;
+    color: #FF3F6C;
+}
+ 
+.log-sign-btn:hover{
+    cursor: pointer;
+}
+.profile-list{
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+.welcome{
+    font-size: 1rem;
+}
+.hide7{
+    display: none;
+}
