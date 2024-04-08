@@ -2,15 +2,20 @@ function signup(){
     return `
     <div class="signup-page">
         <div class="signup-card">
-           <img src="//assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2023/10/29/9610da61-a1a4-4215-b1fa-f612242d10e61698602536819-Flat_200--1-.jpg" alt="">
-          <div class="signInContainer">
+            <img src="//assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2023/10/29/9610da61-a1a4-4215-b1fa-f612242d10e61698602536819-Flat_200--1-.jpg" alt="">
+            <div class="signInContainer">
             <span> <b> Login </b> or <b>Signup</b> </span>
+           
+            <input autocomplete="new-password" type="tel" placeholder="+91 |  Mobile Number" maxlength="10" value="" id="num">
+            <span style = "color:red;" class="num_msg"></span>
 
-            <input autocomplete="new-password" type="tel" placeholder="+91 |  Mobile Number" maxlength="10" value="">
-            
+            <input type="password" placeholder="Enter Password" id="password">
+            <span style = "color:red;" class="pass_msg"></span>
+
             <span>By continuing, I agree to the <a href="">Terms of Use</a> & <a href="">Privacy Policy</a></span>
-
-            <button id="cont-btn-signup">CONTINUE</button>
+           
+            <button id="cont-btn-signup" onclick="load()">CONTINUE</button>
+           
             <span>Have trouble logging in ? <a href="">Get help</a></span>
           </div>
         </div>
