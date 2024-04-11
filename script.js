@@ -135,16 +135,15 @@ for (let i = 0; i < arr.length; i++) {
 
 
 //login function and predefined database here //
-let logArr = [
-    { mobile: "7065047573", pswrd: "@myntrame" },
-    { mobile: "8130771969", pswrd: "@myntrapa" },
-    { mobile: "7289866631", pswrd: "@myntramom" },
-    { mobile: "8800897516", pswrd: "@myntrabro" }
+let userDetails = [
+    { mobile: "7065047573", pswrd: "@myntrame", username: "Fahim" },
+    { mobile: "8130771969", pswrd: "@myntrapa", username: "Paul" },
+    { mobile: "7289866631", pswrd: "@myntramom", username: "Manny" },
+    { mobile: "8800897516", pswrd: "@myntrabro", username: "Willie" }
 ];
 
 function load() {
-    event.preventDefault();
-    let flag = 1;
+
     let pswrd = document.querySelector('#password').value;
     let num = document.querySelector('#num').value;
 
@@ -154,34 +153,36 @@ function load() {
     let pass_msg = document.querySelector('.pass_msg');
 
     if (num === "") {
-        flag = 0; 
-        num_msg.innerHTML ="*number cannot be empty"
-    }else{
-        num_msg.innerHTML ="";
+      
+        num_msg.innerHTML = "*number cannot be empty"
+        return
+    } else {
+        num_msg.innerHTML = "";
     }
     if (pswrd == "") {
-        flag = 0;
-        pass_msg.innerHTML ="*password cannot be empty";
-    }else{
-        pass_msg.innerHTML ="";
-}
-
-    if (flag === 1) {
-        let flag2 = 1;
-        for (let i = 0; i < logArr.length; i++) {
-            if (logArr[i].mobile === num && logArr[i].pswrd === pswrd) {
-                flag2 = 1;
-                break;
-            } else {
-                flag2 = 0;
-            }
-        }
-        if (flag2 == 0) {
-            alert('Login info not found');
-        } else {
-            window.location.href = "./index.html";
-        }
+        
+        pass_msg.innerHTML = "*password cannot be empty";
+        return
+    } else {
+        pass_msg.innerHTML = "";
     }
+
+    let currentUser = userDetails.find((user) => user.mobile === num);
+
+    if (currentUser === undefined) {
+        alert("User not found, Please resgister first!")
+
+        return;
+    }
+
+    if (currentUser.pswrd !== pswrd) {
+        alert("Wrong password!")
+        return
+    }
+
+    alert(`Wellcome back ${currentUser.username}`)
+
+    window.location.href = "./index.html";
 
 }
 // load function ends here// 

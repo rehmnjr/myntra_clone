@@ -139,7 +139,7 @@ main{
     display: flex;
 }
 .img2 img{
-    width: 50%;
+    width: 100%;
 }
 .img4 img{
     width: 49.5%;
@@ -191,7 +191,9 @@ width:16.66%;
 .category img{
     width: 16.666%;
 }
-
+.category:hover{
+    cursor: pointer;
+}
 .box{
     height: 80px;
     display: flex;

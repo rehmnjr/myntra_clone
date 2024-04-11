@@ -1,4 +1,4 @@
-function navbar(){
+function navbar(name){
 return `<nav>
     <div class="nav-body">
         <div class="nav-list">
