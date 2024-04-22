@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="module">
+        let nav = document.querySelector("#nav");
+
+        import navbar from "./components/nav.js";
+        nav.innerHTML = navbar();
+
+    </script>
+    <style>
+        .filter-container{
+            background: rgb(250, 192, 192);
+            width: 300px;
+            border: 1px solid black;
+            padding:20px;
+           display: flex;
+           flex-direction: column;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!-- <div id="nav"></div> -->
+
+    <div class="filter-container">
+        <Span>Home / Footwear</Span>
+        <span>Footwear -848 items</span>
+
+        <div class="verticle-filter filter gender-container">
+            <span>FILTERS</span>
+            <ul class="gender-list">
+                <li>
+                    <input type="radio" id="men" name="option" value="men">
+                    <label for="men"><b>Men</b></label>
+                </li>
+
+                <li>
+                    <input type="radio" id="women" name="option" value="women">
+                    <label for="women"><b>Women</b></label>
+                </li>
+
+                <li>
+                    <input type="radio" id="boys" name="option" value="boys">
+                    <label for="boys"><b>Boys</b></label>
+                </li>
+
+                <li>
+                    <input type="radio" id="girls" name="option" value="girls">
+                    <label for="girls"><b>Girls</b></label>
+                </li>
+            </ul>
+
+            
+        </div>
+
+        <div class="vertical-filter filter product-container">
+            <span>CATEGORIES</span>
+            <ul class="product-list">
+                <!-- <li>
+                    <input type="checkbox" name="option" id="boots" value="Boots">
+                    <label for="boots">Boots</label>
+                    <span class="categories-num">(7163)</span>
+                    </li> -->
+            </ul>
+        </div>
+
+        <div class="vertical-filters-filters brand-container">
+            <span>BRANDS</span>
+            <ul class="brand-list">
+                <li>
+                    <input type="checkbox" name="option" id="dressBerry" value="DressBerry">
+                    <label for="dressBerry">DressBerry</label>
+                    <span class="brand-num">(4015)</span>
+                </li>
+            </ul>
+
+            <ul class="brand-list">
+                <li>
+                    <input type="checkbox" name="option" id="puma" value="Puma">
+                    <label for="puma">Puma</label>
+                    <span class="brand-num">(3492)</span>
+                </li>
+            </ul>
+
+            <ul class="brand-list">
+                <li>
+                    <input type="checkbox" name="option" id="metro" value="Metro">
+                    <label for="metro">Metro</label>
+                    <span class="brand-num">(3043)</span>
+                </li>
+            </ul>
+
+            <ul class="brand-list">
+                <li>
+                    <input type="checkbox" name="option" id="campus" value="Campus">
+                    <label for="campus">Campus</label>
+                    <span class="brand-num">(3027)</span>
+                </li>
+            </ul>
+
+
+            <ul class="brand-list">
+                <li>
+                    <input type="checkbox" name="option" id="roadster" value="Roadster">
+                    <label for="roadster">Roadster</label>
+                    <span class="brand-num">(2944)</span>
+                </li>
+            </ul>
+
+            <ul class="brand-list">
+                <li>
+                    <input type="checkbox" name="option" id="mochi" value="Mochi">
+                    <label for="mochi">Mochi</label>
+                    <span class="brand-num">(2934)</span>
+                </li>
+            </ul>
+
+            <ul class="brand-list">
+                <li>
+                    <input type="checkbox" name="option" id="inc5" value="Inc 5">
+                    <label for="inc5">Inc 5</label>
+                    <span class="brand-num">(2882)</span>
+                </li>
+            </ul>
+
+            <ul class="brand-list">
+                <li>
+                    <input type="checkbox" name="option" id="carltonLondon" value="Carlton London">
+                    <label for="carltonLondon">Carlton London</label>
+                    <span class="brand-num">(2681)</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="vertical-filters-filters price-container">
+            <span>PRICE</span>
+
+            <ul class="price-list">
+                <li>
+                    <input type="checkbox" id="price1" value="Rs. 274 to Rs. 1706">
+                    <label for="price1">Rs. 274 to Rs. 1706</label>
+                    <span class="price-num">(3860)</span>
+                </li>
+            </ul>
+
+            <ul class="price-list">
+                <li>
+                    <input type="checkbox" id="price2" value="Rs. 1706 to Rs. 3138">
+                    <label for="price2">Rs. 1706 to Rs. 3138</label>
+                    <span class="price-num">(149)</span>
+                </li>
+            </ul>
+
+
+            <ul class="price-list">
+                <li>
+                    <input type="checkbox" id="price1" value="Rs. 274 to Rs. 1706">
+                    <label for="price1">Rs. 274 to Rs. 1706</label>
+                    <span class="price-num">(3860)</span>
+                </li>
+            </ul>
+
+            <ul class="price-list">
+                <li>
+                    <input type="checkbox" id="price3" value="Rs. 3138 to Rs. 4570">
+                    <label for="price3">Rs. 3138 to Rs. 4570</label>
+                    <span class="price-num">(2)</span>
+                </li>
+            </ul>
+
+            <ul class="price-list">
+                <li>
+                    <input type="checkbox" id="price4" value="Rs. 4570 to Rs. 6002">
+                    <label for="price4">Rs. 4570 to Rs. 6002</label>
+                    <span class="price-num">(4)</span>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="vertical-filters-filters price-container">
+            <span>PRICE</span>
+
+            <ul class="price-list">
+                <li>
+                    <input type="checkbox" id="price1" value="Rs. 274 to Rs. 1706">
+                    <label for="price1">Rs. 274 to Rs. 1706</label>
+                    <span class="price-num">(3860)</span>
+                </li>
+            </ul>
+
+            <ul class="price-list">
+                <li>
+                    <input type="checkbox" id="price2" value="Rs. 1706 to Rs. 3138">
+                    <label for="price2">Rs. 1706 to Rs. 3138</label>
+                    <span class="price-num">(149)</span>
+                </li>
+            </ul>
+
+
+
+            <ul class="price-list">
+                <li>
+                    <input type="checkbox" id="price1" value="Rs. 274 to Rs. 1706">
+                    <label for="price1">Rs. 274 to Rs. 1706</label>
+                    <span class="price-num">(3860)</span>
+                </li>
+            </ul>
+
+            <ul class="price-list">
+                <li>
+                    <input type="checkbox" id="price3" value="Rs. 3138 to Rs. 4570">
+                    <label for="price3">Rs. 3138 to Rs. 4570</label>
+                    <span class="price-num">(2)</span>
+                </li>
+            </ul>
+
+            <ul class="price-list">
+                <li>
+                    <input type="checkbox" id="price4" value="Rs. 4570 to Rs. 6002">
+                    <label for="price4">Rs. 4570 to Rs. 6002</label>
+                    <span class="price-num">(4)</span>
+                </li>
+            </ul>
+        </div>
+
+        
+
+    </div>
+
+
+
+
+
+</body>
+<script src="script.js"></script>
+<script src="product.js"></script>
+
+</html>
