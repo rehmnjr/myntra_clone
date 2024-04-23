@@ -30,9 +30,21 @@ width: 250px;
     flex-direction: column;
     text-align: start;
     border: 1px solid black;
+    justify-content: space-between;
     width: 260px;
+    /* padding: 15px; */
     margin: 10px;
 }
-.price{
+.price,.product-name{
     font-weight: 600;
+}
+.strike-price,.per-cent{
+    font-size: 0.8rem
+}
+.per-cent{
+    color: orange;
+}
+.detail{
+    display: flex;
+    flex-direction: column;
 }
